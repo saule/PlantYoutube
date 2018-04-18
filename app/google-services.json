@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "629304768522",
+    "firebase_url": "https://gpsaplant-fa6ad.firebaseio.com",
+    "project_id": "gpsaplant-fa6ad",
+    "storage_bucket": "gpsaplant-fa6ad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:629304768522:android:16a0414bdffc832a",
+        "android_client_info": {
+          "package_name": "plant.kz.aygolek.plantyoutube"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "629304768522-a0blgsqgv922tmbb1kbcoblps1fqnhrr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "plant.kz.aygolek.plantyoutube",
+            "certificate_hash": "029df3bb35cde2a462718d7cb3c97a403bd67ec4"
+          }
+        },
+        {
+          "client_id": "629304768522-6jshruo4v19m49ebcuoof8deqh3qk0n0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxNuVowVv_N_EGJ_zEkOSJHAtTjVRTiuw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "629304768522-6jshruo4v19m49ebcuoof8deqh3qk0n0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

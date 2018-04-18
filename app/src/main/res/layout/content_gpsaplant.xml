@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="60dp"
+    android:paddingBottom="20dp"
+    tools:context=".gpsaplant.GPSAPLant"
+    android:background="#888888">
+
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/pinkpeachbevel"
+        android:text="@string/lblGps_pause"
+        android:id="@+id/btnPause"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+
+        android:onClick="btnPauseClicked"/>
+
+
+    <TextView
+        android:id="@+id/lblLatitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:text="@string/lblLatitude" />
+
+    <TextView
+        android:id="@+id/lblLatitudeValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="22dp"
+        android:layout_toEndOf="@+id/lblLongitude"
+        android:inputType="textPersonName"
+        android:paddingLeft="2dp"
+        android:text="@string/lblZero" />
+
+
+    <TextView
+        android:id="@+id/lblLongitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignStart="@+id/lblLatitude"
+        android:layout_below="@+id/lblLatitude"
+        android:text="@string/lblLongitude" />
+
+
+    <TextView
+        android:id="@+id/lblLongitudeValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignBaseline="@+id/lblLongitude"
+        android:layout_alignBottom="@+id/lblLongitude"
+        android:layout_alignStart="@+id/lblLatitudeValue"
+        android:inputType="textPersonName"
+        android:paddingLeft="2dp"
+        android:text="@string/lblZero" />
+
+    <TextView
+        android:id="@+id/lblGPSAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/lblLongitude"
+        android:layout_below="@+id/lblLongitude"
+        android:text="@string/lblGPSAge" />
+
+    <Chronometer
+        android:id="@+id/chrGPSAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignBottom="@+id/lblGPSAge"
+        android:layout_alignStart="@+id/LongitudeValue"
+        android:layout_toRightOf="@+id/lblLongitude"
+        android:layout_toEndOf="@+id/lblLongitude"/>
+
+    <TextView
+        android:id="@+id/lblPlantName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignBottom="@+id/autoCompleteTextPlantName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        android:text="@string/lblPlantName" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextPlantName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnPause"
+        android:layout_toRightOf="@+id/lblPlantName"
+        android:text="@string/lblBlank"/>
+
+
+    <TextView
+        android:id="@+id/lblDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/actDescription"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/lblDescription" />
+
+    <AutoCompleteTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblBlank"
+        android:id="@+id/actDescription"
+        android:layout_below="@+id/actLocation"
+        android:layout_alignRight="@+id/btnPause"
+        android:layout_alignEnd="@+id/btnPause"
+        android:layout_toEndOf="@+id/lblDescription"
+        android:layout_toRightOf="@+id/lblDescription" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/actLocation"
+        android:layout_alignEnd="@+id/lblGPSAge"
+        android:layout_alignRight="@+id/lblGPSAge"
+        android:text="@string/lblLocation" />
+
+    <AutoCompleteTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblBlank"
+        android:id="@+id/actLocation"
+        android:layout_below="@+id/autoCompleteTextPlantName"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/actDescription"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btnShowSaved"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/lblPlantName"
+            android:layout_weight="1"
+            android:background="@mipmap/pinkpeachbevel"
+            android:onClick="btnShowSavedClicked"
+            android:text="@string/lblShowSaved" />
+
+        <Button
+            android:id="@+id/btnTakePhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/btnShowSaved"
+            android:layout_alignEnd="@+id/autoCompleteTextPlantName"
+            android:layout_alignRight="@+id/autoCompleteTextPlantName"
+            android:layout_weight="1"
+            android:background="@mipmap/pinkpeachbevel"
+            android:onClick="btnTakePhotoClicked"
+            android:text="@string/lblTakePhoto" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout"
+        android:background="@mipmap/pinkpeachbevel"
+        android:onClick="onSaveClicked"
+        android:text="@string/lblSave" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgSpecimenPhoto"
+        android:layout_below="@+id/btnSave"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignRight="@+id/btnSave"
+        android:layout_alignEnd="@+id/btnSave"
+        android:layout_alignParentBottom="true"
+        app:srcCompat="@mipmap/pinkpeachbevel" />
+</RelativeLayout>
+<!--
+
+android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"/>
+-->

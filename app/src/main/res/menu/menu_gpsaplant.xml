@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="plant.kz.aygolek.plantyoutube.gpsaplant.GPSAPLant">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/gpsaplant" android:title="GPS a PLant" app:showAsAction="ifRoom" android:onClick="gpsaPlantClicked"/>
+    <item android:id="@+id/capturecolor" android:title="search by color" app:showAsAction="ifRoom" android:onClick="searchByColorClicked"/>
+</menu>
